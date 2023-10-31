@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+#stage {
+    height: 80vh;
+    width: 80%;
+    margin: 10vh auto;
+    display: flex;
+    transition: all 1s ease-in-out;
+}
+
+.clicked {
+    height: 95vh !important;
+    width: 99% !important;
+    /* background-color: aqua; */
+    margin: 1vh 1% !important;
+}
+
+.slice{
+    position: relative;
+    width: 18%;
+    height: 100%;
+    background-color: rgb(110, 255, 248);
+    margin: 1% 1%;
+    border-radius: 25px;
+    transition: all 1s ease-in-out;
+    /* de-saturate the content */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    z-index: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.slice h2{
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+    padding: 0;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+
+.active{
+    width: 175%;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.inactive{
+    width: 5%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin: 1% 0.25%;
+}
+
+#focus{
+    border-radius: 75px 25px 25px 75px;
+    background-image: url(../assets/images/me.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#about{
+    background-image: url(https://st4.depositphotos.com/22719282/39377/i/450/depositphotos_393778800-stock-photo-question-mark-seamless-outline-pattern.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio{
+    background-image: url(https://dreamwalk.com.au/wp-content/uploads/2022/02/app-ui-design-with-rounded-corners.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#skills{
+    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-position: center;
+}
+
+#contact{
+    border-radius: 25px 75px 75px 25px;
+    background-image: url(https://png.pngtree.com/background/20210712/original/pngtree-heart-circle-message-doodle-seamless-pattern-picture-image_1170343.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slice:not(.active) h2{
+    rotate: 90deg;
+    margin-top: 75%;
+    display:block;
+}
