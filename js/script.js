@@ -27,7 +27,7 @@ function textanimate (word) {
     const duration = 500 / word.length;
 
     //if the new word is the same as the old one, do nothing
-    if (text.innerText === word) return;
+    // if (text.innerText === word) return;
 
     //count and set the word length
     text.innerText = word.toUpperCase();

@@ -132,9 +132,8 @@ body{
 
 #splash-text{
     font-family: 'Roboto Mono', monospace;
-    text-transform: capitalize;
     position: absolute;
-    top: 6%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
@@ -146,4 +145,5 @@ body{
     /* display: none; */
     opacity: 1;
     transition: all 0.25s ease-in-out;
+    text-transform: uppercase;
 }
