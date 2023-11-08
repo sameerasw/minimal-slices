@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: #000000;
+    background-color: var(--theme-bg);
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -52,7 +52,7 @@ body{
     background-color: rgb(110, 255, 248);
     margin: 1% 1%;
     border-radius: 25px;
-    transition: all 1s ease-in-out;
+    transition: all 0.75s ease-in-out;
     /* de-saturate the content */
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -128,4 +128,22 @@ body{
     /* width: max-content; */
     font-size: 2rem;
     font-weight: 100;
+}
+
+#splash-text{
+    font-family: 'Roboto Mono', monospace;
+    text-transform: capitalize;
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--theme-fg);
+    text-align: center;
+    padding: 0;
+    z-index: 1;
+    /* display: none; */
+    opacity: 1;
+    transition: all 0.25s ease-in-out;
 }
